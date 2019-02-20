@@ -1,0 +1,17 @@
+- title: __home__
+  url:   /
+
+- title: About
+  url:   /about/
+
+- title: Dev
+  url:   /dev/
+
+- title: Projects
+  url:   /projects/
+
+- title: Anecdotes
+  url:   /anecdotes/
+
+- title: Photologue
+  url:   /photologue/

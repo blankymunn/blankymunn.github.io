@@ -1,0 +1,12 @@
+---
+layout: page
+title: Anecdotes
+permalink: /anecdotes/
+desc: 
+---
+
+<div class="page-content">
+    <h2>2019</h2>
+    {% for post in site.tags.anecdotes_2019 %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}

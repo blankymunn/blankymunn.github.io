@@ -1,0 +1,36 @@
+---
+layout: page
+title: Dev
+permalink: /dev/
+desc: 新聞・ニュース・Dev
+---
+
+<!--Later, I have to add a dropdown menu for each categories
+	in purpose of composing sub-categories.-->
+
+<div class="page-content">
+    <h2>Computer Vision</h2>
+    {% for post in site.tags.computer_vision %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}
+
+    <h2>Deep Learning</h2>
+    {% for post in site.tags.deep_learning %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}
+
+    <h2>Dev Env</h2>
+    {% for post in site.tags.dev_env %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}
+
+    <h2>Github</h2>
+    {% for post in site.tags.github %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}
+
+    <h2>Python</h2>
+    {% for post in site.tags.python %}
+      {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+    {% endfor %}
+  </div>

@@ -1,0 +1,10 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+desc: 新聞・ニュース・Projects
+---
+
+{% for post in site.categories.projects %}
+  {%- include themes/{{ site.amsf_theme }}/includes/page-item.html -%}
+{% endfor %}
