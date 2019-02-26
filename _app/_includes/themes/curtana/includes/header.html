@@ -9,7 +9,7 @@
       	  <li {% if page.permalink == item.url or page.category == lowercased_title %}class=current{% endif %}>
         	<a style="text-align: center;"href="{{ item_url }}">
 			{%- if item.title == "__home__" -%}
-			  <img align="center" src="{{amsf_user_assets}}/svg/home_cover.jpg" height="30" width="42">
+			  <img align="center" src="{{amsf_user_assets}}/img/home_cover.jpg" height="30" width="42">
             {%- else -%}
               {{ item.title }}
             {%- endif -%}

@@ -838,7 +838,7 @@ body:hover .latest {
   margin-right: calc(var(--nav-item-space) * -1);
   margin-left: calc(var(--nav-item-space) * -1);
   font-size: 60%;
-  text-transform: lowercase;
+  // text-transform: lowercase;
 
   ul {
 
@@ -846,9 +846,9 @@ body:hover .latest {
       display: inline-block;
       line-height: 1.8;
 
-      a {
+     /* a {
         padding: .5em var(--nav-item-space);
-      }
+      } */
     }
   }
 }

@@ -32,6 +32,54 @@
   opacity: .8;
 }
 
+// Footer icon
+#links > li > a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.footer-icons {
+	ul {
+		align: center;
+		margin-bottom: 5px;
+	}
+	li{
+		width: 48px;
+		height: 48px;
+		padding-top: 12px;
+	}
+	a {
+		padding: 0 0 0 0;
+	}
+}
+
+#link-github {
+    background-image: url(../img/github24.png);
+}
+
+#link-facebook {
+    background-image: url(../images/pc/icon_face.png);
+}
+
+#link-instagram {
+    background-image: url(../images/pc/icon_twit.png);
+}
+
+#link-rss {
+    background-image: url(../images/pc/icon_rss.png);
+}
+
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+// Search bar from tech.kakao.com
 #search {
     position: absolute;
     z-index: 99;

@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 desc: 
-heading-bg: svg/guam_yoga.jpg
+heading-bg: img/guam_yoga.jpg
 heading-bg-local: true
 heading-bg-color: "#fafafa"
 heading-bg-size: "1024px 837px"
