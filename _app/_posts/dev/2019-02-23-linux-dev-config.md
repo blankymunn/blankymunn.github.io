@@ -11,13 +11,13 @@ Over several times to re-install Ubuntu, I realized the need to write down all t
 ## 1. Things about terminal
 ### 1-1. Terminator
 You can install terminator at the terminal. Type the command below.<br>
-```
+```ruby
 sudo apt-get install terminator
 ```
 After installing the app, you have to install [terminator themes](https://github.com/EliverLara/terminator-themes).<br>
 We'll use `onedark` theme. If you installed the themes, Let's move on.<br><br><br>
 The next step is for configuration of the app. Make or edit the file: `~/.config/terminator/config` and then paste the commands to it.
-```vim
+```ruby
 [global_config]
   enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   handle_size = 1
@@ -57,7 +57,7 @@ The next step is for configuration of the app. Make or edit the file: `~/.config
     show_titlebar = False
 ```
 The next step is to eliminate border of the app. Make a file:` ~/.config/gtk-3.0/gtk.css` to contain the commands below.
-```vim
+```ruby
 @deifine-color border #282c34;
 
 .terminator-terminal-window notebook header, .terminator-terminal-window stack {
@@ -78,17 +78,17 @@ Finally, open the app <em>settings</em> and go to the keyboard menu. `Ctrl+Alt+T
 </details><br>
 
 ### 1-2. Zsh & Oh-my-zsh
-```
+```ruby
 sudo apt-get install zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # via curl
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" # via wget
 ```
 After the installation, commit
-```
+```ruby
 chsh -s /usr/bin/zsh
 ```
 to set zsh as the default shell. Then, you can set the zsh configuration via `~/.zshrc` file. The code below is an example.
-```vim
+```ruby
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="/home/blankymunn/.oh-my-zsh"
 
@@ -118,17 +118,17 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 ```
 If you've been using bash shell, you can synchronize your `~/.bashrc` or `~/.bash_profile` with `~/.zshrc`.
-```
+```ruby
 ln -s $SOURCE $TARGET
 ```
 The file at `$TARGET` references the source file at `$SOURCE`. This means all the contents of `$TARGET` file is replaced with the contents of the file at `$SOURCE`. You can check this out [here](https://askubuntu.com/questions/56339/how-to-create-a-soft-or-symbolic-link).
 
 ### 1-3. Neovim
-```
+```ruby
 sudo apt-get install neovim
 ```
 You can set the configuration of neovim at `~/.config/nvim/init.vim`. If the file doesn't exist, just make one.
-```vim
+```ruby
 "installing Vim Plug-in Using Vim-Plug
 call plug#begin('~/.config/nvim/plugged')
 Plug 'sheerun/vim-polyglot'
@@ -142,7 +142,7 @@ Plug 'romainl/vim-qf'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/indentLine'
-Plug 'suan/vim-instant-markdown'
+"Plug 'suan/vim-instant-markdown'
 call plug#end()
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -262,7 +262,7 @@ filetype plugin on
 ```
 ### 1-4. Vim-plug
 You can install by commiting this commend.
-```
+```ruby
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```

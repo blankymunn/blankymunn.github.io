@@ -1,7 +1,15 @@
 <!-- Main content wrap -->
+<!-- index(main page)'s permalink is "/" -->
+{%- if page.permalink == "/" -%}
+<main class="content {{page.class}}" role=main style="margin-bottom: 12vmin;">
+	{{ content }}
+</main>
+{%- else -%}
 <main class="content {{ page.class }}" role=main>
   {{ content }}
 </main>
+{%- endif -%}
+
 
 <!-- Back to top button-->
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
