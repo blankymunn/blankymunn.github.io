@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>Blankymunn</title>
   <subtitle>An archive for my dev-log</subtitle>
-  <updated>2019-02-26T11:15:36+00:00</updated>
+  <updated>2019-02-26T13:58:45+00:00</updated>
   <id>http://0.0.0.0:4321/</id>
   <generator uri="https://sparanoid.com/lab/amsf/" version="2.0.12">Almace Scaffolding</generator>
 
@@ -82,7 +82,7 @@ If you wanna use your own classes, you can add yours to this file.&lt;/p&gt;
         <published>2019-02-23T00:00:00+00:00</published>
 
         
-          <updated>2019-02-26T08:15:52+00:00</updated>
+          <updated>2019-02-26T11:24:57+00:00</updated>
         
 
         <author>
