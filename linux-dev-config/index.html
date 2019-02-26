@@ -1,0 +1,486 @@
+<!doctype html>
+
+<html lang="en">
+
+<!--
+  Apply head only for dev environment, this is required for jekyll to
+  insert livereload scripts
+-->
+
+  <head>
+
+
+
+  <meta charset="utf-8">
+
+
+<title>Personal dev-settings for Linux - Blankymunn</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Define a description for better SEO result -->
+<meta name="description" content="What I’m going to explain is my own dev-settings for Linux, especially for Ubuntu. Over several times to re-install Ubuntu, I realized the need to write down all the things that I’d done. 1. Things about terminal 1-1. Terminator You...">
+
+<!-- Cheome Web App theme color -->
+<meta name="theme-color" content="#808080">
+
+<!-- Feed URL -->
+<link rel="alternate" href="/feed.xml" type="application/atom+xml">
+
+<!-- Site icons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="/favicon.svg?assets-inline-assets-keep" sizes="any" type="image/svg+xml"><link rel="mask-icon" href="/mask-icon.svg" color="#808080">
+
+<!-- Chrome Web App manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
+
+<!-- Canonical links, avoid duplicate content problems -->
+<link rel="canonical" href="http://0.0.0.0:4321/linux-dev-config/">
+
+<!-- DNS prefetching for static files -->
+
+
+<!-- Head hooks -->
+
+
+
+  </head>
+
+<!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Blankymunn">
+<meta property="og:title" content="Personal dev-settings for Linux">
+<meta property="og:url" content="http://0.0.0.0:4321/linux-dev-config/">
+<meta property="og:description" content="What I’m going to explain is my own dev-settings for Linux, especially for Ubuntu. Over several times to re-install Ubuntu, I realized the need to write down all the things that I’d done. 1. Things about terminal 1-1. Terminator You...">
+<meta property="og:image" content="http://0.0.0.0:4321/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta name="twitter:site" content="@">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-02-23T00:00:00+00:00">
+  <meta property="article:modified_time" content="2019-02-26T08:15:52+00:00">
+  <meta name="twitter:label1" value="Words">
+  <meta name="twitter:data1" value="1712 words">
+  <meta name="twitter:label2" value="Reading time">
+  <meta name="twitter:data2" value="8 mins">
+
+<!-- Post specified styles -->
+<style data-assets-inline>
+  :root {
+    
+
+    
+
+    
+
+    
+  }
+
+  body {
+    
+  }
+
+  
+  
+    
+</style>
+<!-- Main navigation with current page / categoriy highlighted -->
+<nav class="navigation">
+	<ul style="display: flex; align: justify; justify-content: space-between;">
+		<!-- https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox의_기본_개념 참고-->
+	  <li >
+        	<a style="text-align: center;"href="/"><img align="center" src="/assets/img/home_cover.jpg" height="30" width="42"></a>
+      	  </li>
+	  <li >
+        	<a style="text-align: center;"href="/about/">About</a>
+      	  </li>
+	  <li class=current>
+        	<a style="text-align: center;"href="/dev/">Dev</a>
+      	  </li>
+	  <li >
+        	<a style="text-align: center;"href="/projects/">Projects</a>
+      	  </li>
+	  <li >
+        	<a style="text-align: center;"href="/anecdotes/">Anecdotes</a>
+      	  </li>
+	  <li >
+        	<a style="text-align: center;"href="/photologue/">Photologue</a>
+      	  </li>
+	  
+  </ul>
+</nav>
+<!-- Main content wrap -->
+<!-- index(main page)'s permalink is "/" --><main class="content " role=main>
+  <!-- Post-wide custom CSS -->
+
+
+<!-- Article wrapper, limit width -->
+<article lang="en">
+
+  <!-- Post title -->
+  <header style="     ">
+
+    <h1 class="" title="Personal dev-settings for Linux" data-title="Personal dev-settings for Linux">
+      Personal dev-settings for Linux<span class="dot dot--post"> </span>
+    </h1>
+
+	
+	
+      <small>
+        By <span rel="author">Blankymunn</span>
+        on <time datetime="2019-02-23T00:00:00+00:00">Feb 23, 2019</time>
+      </small>
+    
+
+    
+
+  </header>
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>What I’m going to explain is my own dev-settings for Linux, especially for Ubuntu.
+Over several times to re-install Ubuntu, I realized the need to write down all the things that I’d done.</p>
+
+<h2 id="1-things-about-terminal">1. Things about terminal</h2>
+<h3 id="1-1-terminator">1-1. Terminator</h3>
+<p>You can install terminator at the terminal. Type the command below.<br /></p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">terminator</span>
+</code></pre></div></div>
+<p>After installing the app, you have to install <a href="https://github.com/EliverLara/terminator-themes">terminator themes</a>.<br />
+We’ll use <code class="highlighter-rouge">onedark</code> theme. If you installed the themes, Let’s move on.<br /><br /><br />
+The next step is for configuration of the app. Make or edit the file: <code class="highlighter-rouge">~/.config/terminator/config</code> and then paste the commands to it.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">global_config</span><span class="p">]</span>
+  <span class="n">enabled_plugins</span> <span class="o">=</span> <span class="no">TerminatorThemes</span><span class="p">,</span> <span class="no">LaunchpadCodeURLHandler</span><span class="p">,</span> <span class="no">APTURLHandler</span><span class="p">,</span> <span class="no">LaunchpadBugURLHandler</span>
+  <span class="n">handle_size</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">window_state</span> <span class="o">=</span> <span class="n">maximise</span>
+<span class="p">[</span><span class="n">keybindings</span><span class="p">]</span>
+  <span class="n">close_term</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;&lt;</span><span class="no">Shift</span><span class="o">&gt;</span><span class="n">w</span>
+  <span class="n">new_tab</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;&lt;</span><span class="no">Shift</span><span class="o">&gt;</span><span class="n">t</span>
+  <span class="n">switch_to_tab_1</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">1</span>
+  <span class="n">switch_to_tab_10</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">0</span>
+  <span class="n">switch_to_tab_2</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">2</span>
+  <span class="n">switch_to_tab_3</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">3</span>
+  <span class="n">switch_to_tab_4</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">4</span>
+  <span class="n">switch_to_tab_5</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">5</span>
+  <span class="n">switch_to_tab_6</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">6</span>
+  <span class="n">switch_to_tab_7</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">7</span>
+  <span class="n">switch_to_tab_8</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">8</span>
+  <span class="n">switch_to_tab_9</span> <span class="o">=</span> <span class="o">&lt;</span><span class="no">Primary</span><span class="o">&gt;</span><span class="mi">9</span>
+<span class="p">[</span><span class="n">layouts</span><span class="p">]</span>
+  <span class="p">[[</span><span class="n">default</span><span class="p">]]</span>
+    <span class="p">[[[</span><span class="n">child1</span><span class="p">]]]</span>
+      <span class="n">parent</span> <span class="o">=</span> <span class="n">window0</span>
+      <span class="n">profile</span> <span class="o">=</span> <span class="n">default</span>
+      <span class="n">type</span> <span class="o">=</span> <span class="no">Terminal</span>
+    <span class="p">[[[</span><span class="n">window0</span><span class="p">]]]</span>
+      <span class="n">parent</span> <span class="o">=</span> <span class="s2">""</span>
+      <span class="n">type</span> <span class="o">=</span> <span class="no">Window</span>
+<span class="p">[</span><span class="n">plugins</span><span class="p">]</span>
+<span class="p">[</span><span class="n">profiles</span><span class="p">]</span>
+  <span class="p">[[</span><span class="n">default</span><span class="p">]]</span>
+    <span class="n">background_color</span> <span class="o">=</span> <span class="s2">"#282c34"</span>
+    <span class="n">background_darkness</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="n">cursor_color</span> <span class="o">=</span> <span class="s2">"#676c76"</span>
+    <span class="n">font</span> <span class="o">=</span> <span class="no">Ubuntu</span> <span class="no">Mono</span> <span class="mi">14</span>
+    <span class="n">foreground_color</span> <span class="o">=</span> <span class="s2">"#abb2bf"</span>
+    <span class="n">palette</span> <span class="o">=</span> <span class="s2">"#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"</span>
+    <span class="n">scrollbar_position</span> <span class="o">=</span> <span class="n">hidden</span>
+    <span class="n">show_titlebar</span> <span class="o">=</span> <span class="no">False</span>
+</code></pre></div></div>
+<p>The next step is to eliminate border of the app. Make a file:<code class="highlighter-rouge"> ~/.config/gtk-3.0/gtk.css</code> to contain the commands below.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="vi">@deifine</span><span class="o">-</span><span class="n">color</span> <span class="n">border</span> <span class="c1">#282c34;</span>
+
+<span class="p">.</span><span class="nf">terminator</span><span class="o">-</span><span class="n">terminal</span><span class="o">-</span><span class="n">window</span> <span class="n">notebook</span> <span class="n">header</span><span class="p">,</span> <span class="p">.</span><span class="nf">terminator</span><span class="o">-</span><span class="n">terminal</span><span class="o">-</span><span class="n">window</span> <span class="n">stack</span> <span class="p">{</span>
+    <span class="ss">border: </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nf">terminator</span><span class="o">-</span><span class="n">terminal</span><span class="o">-</span><span class="n">window</span> <span class="n">notebook</span> <span class="p">{</span>
+    <span class="ss">border: </span><span class="mi">0</span><span class="p">;</span>
+	<span class="ss">padding: </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nf">terminator</span><span class="o">-</span><span class="n">terminal</span><span class="o">-</span><span class="n">window</span> <span class="n">decoration</span> <span class="p">{</span>
+    <span class="ss">border: </span><span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="n">shade</span><span class="p">(</span><span class="vi">@border</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+	<span class="ss">background: </span><span class="n">shade</span><span class="p">(</span><span class="vi">@border</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Finally, open the app <em>settings</em> and go to the keyboard menu. <code class="highlighter-rouge">Ctrl+Alt+T</code> launches terminal as default. Disable it, and make a new shortcut as same as the key combination before. The command should be <code class="highlighter-rouge">terminator</code>. Then the shortcut will launch the app.
+&lt;/details&gt;<br /></p>
+
+<h3 id="1-2-zsh--oh-my-zsh">1-2. Zsh &amp; Oh-my-zsh</h3>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">zsh</span> <span class="n">zsh</span><span class="o">-</span><span class="n">completions</span>
+<span class="n">sh</span> <span class="o">-</span><span class="n">c</span> <span class="s2">"$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span> <span class="c1"># via curl</span>
+<span class="n">sh</span> <span class="o">-</span><span class="n">c</span> <span class="s2">"$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"</span> <span class="c1"># via wget</span>
+</code></pre></div></div>
+<p>After the installation, commit</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">chsh</span> <span class="o">-</span><span class="n">s</span> <span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">zsh</span>
+</code></pre></div></div>
+<p>to set zsh as the default shell. Then, you can set the zsh configuration via <code class="highlighter-rouge">~/.zshrc</code> file. The code below is an example.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">export</span> <span class="no">PATH</span><span class="o">=</span><span class="vg">$HOME</span><span class="o">/</span><span class="n">bin</span><span class="ss">:/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="p">:</span><span class="vg">$PATH</span>
+<span class="n">export</span> <span class="no">ZSH</span><span class="o">=</span><span class="s2">"/home/blankymunn/.oh-my-zsh"</span>
+
+<span class="no">ZSH_THEME</span><span class="o">=</span><span class="s2">"robbyrussell"</span>
+<span class="n">plugins</span><span class="o">=</span><span class="p">(</span>
+<span class="n">git</span>
+<span class="n">zsh</span><span class="o">-</span><span class="n">syntax</span><span class="o">-</span><span class="n">highlighting</span>
+<span class="n">zsh</span><span class="o">-</span><span class="n">autosuggestions</span>
+<span class="p">)</span>
+
+<span class="n">source</span> <span class="vg">$ZSH</span><span class="o">/</span><span class="n">oh</span><span class="o">-</span><span class="n">my</span><span class="o">-</span><span class="n">zsh</span><span class="p">.</span><span class="nf">sh</span>
+<span class="n">export</span> <span class="no">PATH</span><span class="o">=</span><span class="s2">"/home/blankymunn/anaconda3/bin:$PATH"</span>
+
+<span class="n">export</span> <span class="no">EDITOR</span><span class="o">=</span><span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">nvim</span>
+
+<span class="k">alias</span> <span class="n">vi</span><span class="o">=</span><span class="s1">'nvim'</span>
+<span class="k">alias</span> <span class="n">vim</span><span class="o">=</span><span class="s1">'nvim'</span>
+<span class="k">alias</span> <span class="n">vimdiff</span><span class="o">=</span><span class="s2">"nvim -d"</span>
+<span class="n">export</span> <span class="no">PWS</span><span class="o">=</span><span class="s1">'/home/blankymunn/Desktop/computer-vision/python'</span>
+<span class="n">export</span> <span class="no">CV</span><span class="o">=</span><span class="s1">'/home/blankymunn/Desktop/computer-vision'</span>
+<span class="n">export</span> <span class="no">GIT</span><span class="o">=</span><span class="s1">'/home/blankymunn/Desktop/computer-vision/git'</span>
+<span class="n">source</span> <span class="sr">/home/</span><span class="n">blankymunn</span><span class="o">/</span><span class="n">zsh</span><span class="o">-</span><span class="n">syntax</span><span class="o">-</span><span class="n">highlighting</span><span class="o">/</span><span class="n">zsh</span><span class="o">-</span><span class="n">syntax</span><span class="o">-</span><span class="n">highlighting</span><span class="p">.</span><span class="nf">zsh</span>
+
+<span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="o">~</span><span class="sr">/.fzf.zsh ] &amp;&amp; source ~/</span><span class="p">.</span><span class="nf">fzf</span><span class="p">.</span><span class="nf">zsh</span>
+<span class="c1"># Install Ruby Gems to ~/gems</span>
+<span class="n">export</span> <span class="no">GEM_HOME</span><span class="o">=</span><span class="s2">"$HOME/gems"</span>
+<span class="n">export</span> <span class="no">PATH</span><span class="o">=</span><span class="s2">"$HOME/gems/bin:$PATH"</span>
+</code></pre></div></div>
+<p>If you’ve been using bash shell, you can synchronize your <code class="highlighter-rouge">~/.bashrc</code> or <code class="highlighter-rouge">~/.bash_profile</code> with <code class="highlighter-rouge">~/.zshrc</code>.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="vg">$SOURCE</span> <span class="vg">$TARGET</span>
+</code></pre></div></div>
+<p>The file at <code class="highlighter-rouge">$TARGET</code> references the source file at <code class="highlighter-rouge">$SOURCE</code>. This means all the contents of <code class="highlighter-rouge">$TARGET</code> file is replaced with the contents of the file at <code class="highlighter-rouge">$SOURCE</code>. You can check this out <a href="https://askubuntu.com/questions/56339/how-to-create-a-soft-or-symbolic-link">here</a>.</p>
+
+<h3 id="1-3-neovim">1-3. Neovim</h3>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">neovim</span>
+</code></pre></div></div>
+<p>You can set the configuration of neovim at <code class="highlighter-rouge">~/.config/nvim/init.vim</code>. If the file doesn’t exist, just make one.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"installing Vim Plug-in Using Vim-Plug
+call plug#begin('~/.config/nvim/plugged')
+Plug 'sheerun/vim-polyglot'
+Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+"</span><span class="no">Plug</span> <span class="s1">'neomake/neomake'</span>
+<span class="s2">"Plug 'dojoteef/neomake-autolint'
+Plug 'vim-syntastic/syntastic'
+Plug 'romainl/vim-qf'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Yggdroot/indentLine'
+"</span><span class="no">Plug</span> <span class="s1">'suan/vim-instant-markdown'</span>
+<span class="n">call</span> <span class="n">plug</span><span class="c1">#end()</span>
+
+<span class="s2">"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"</span><span class="no">If</span> <span class="n">you</span><span class="s1">'re using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux'</span><span class="n">s</span> <span class="mi">24</span><span class="o">-</span><span class="n">bit</span> <span class="n">color</span> <span class="n">support</span>
+<span class="s2">"(see &lt; http://sunaku.github.io/tmux-24bit-color.html#usage &gt; for more information.)
+if (empty($TMUX))
+  if (has("</span><span class="n">nvim</span><span class="s2">"))
+    "</span><span class="no">For</span> <span class="no">Neovim</span> <span class="mf">0.1</span><span class="o">.</span><span class="mi">3</span> <span class="n">and</span> <span class="mf">0.1</span><span class="o">.</span><span class="mi">4</span> <span class="o">&lt;</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">neovim</span><span class="o">/</span><span class="n">neovim</span><span class="o">/</span><span class="n">pull</span><span class="o">/</span><span class="mi">2198</span><span class="s2">"&gt;
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "</span><span class="no">For</span> <span class="no">Neovim</span> <span class="o">&gt;</span> <span class="mf">0.1</span><span class="o">.</span><span class="mi">5</span> <span class="n">and</span> <span class="no">Vim</span> <span class="o">&gt;</span> <span class="n">patch</span> <span class="mf">7.4</span><span class="o">.</span><span class="mi">1799</span> <span class="o">&lt;</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">vim</span><span class="o">/</span><span class="n">vim</span><span class="o">/</span><span class="n">commit</span><span class="o">/</span><span class="mi">61</span><span class="n">be73bb0f965a895bfb064ea3e55476ac175162</span> <span class="o">&gt;</span>
+  <span class="s2">"Based on Vim patch 7.4.1770 (`guicolors` option) &lt; https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd &gt;
+  "</span> <span class="o">&lt;</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">neovim</span><span class="o">/</span><span class="n">neovim</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="no">Following</span><span class="o">-</span><span class="no">HEAD</span><span class="c1">#20160511 &gt;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">has</span><span class="p">(</span><span class="s2">"termguicolors"</span><span class="p">))</span>
+    <span class="n">set</span> <span class="n">termguicolors</span>
+  <span class="n">endif</span>
+<span class="n">endif</span>
+ 
+<span class="n">let</span> <span class="n">base16colorspace</span><span class="o">=</span><span class="mi">256</span>
+ 
+<span class="s2">"Configuration for lightline
+"</span><span class="n">let</span> <span class="n">g</span><span class="ss">:lightline</span> <span class="o">=</span> <span class="p">{</span>
+<span class="s2">"  </span><span class="se">\ </span><span class="s2">'colorscheme': 'onedark',
+"</span>  <span class="p">\</span> <span class="p">}</span>
+ 
+<span class="n">let</span> <span class="n">g</span><span class="ss">:lightline</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="p">\</span> <span class="s1">'colorscheme'</span><span class="p">:</span> <span class="s1">'onedark'</span><span class="p">,</span>
+      <span class="p">\</span> <span class="s1">'component_function'</span><span class="p">:</span> <span class="p">{</span>
+      <span class="p">\</span>   <span class="s1">'filename'</span><span class="p">:</span> <span class="s1">'LightlineFilename'</span><span class="p">,</span>
+      <span class="p">\</span> <span class="p">},</span>
+      <span class="p">\</span> <span class="p">}</span>
+ 
+<span class="n">function!</span> <span class="no">LightlineFilename</span><span class="p">()</span>
+  <span class="k">return</span> <span class="o">&amp;</span><span class="n">filetype</span> <span class="o">==</span><span class="c1"># 'vimfiler' ? vimfiler#get_status_string() :</span>
+        <span class="p">\</span> <span class="o">&amp;</span><span class="n">filetype</span> <span class="o">==</span><span class="c1"># 'unite' ? unite#get_status_string() :</span>
+        <span class="p">\</span> <span class="o">&amp;</span><span class="n">filetype</span> <span class="o">==</span><span class="c1"># 'vimshell' ? vimshell#get_status_string() :</span>
+        <span class="p">\</span> <span class="n">expand</span><span class="p">(</span><span class="s1">'%:t'</span><span class="p">)</span> <span class="o">!=</span><span class="c1"># '' ? expand('%:t') : '[No Name]'</span>
+<span class="n">endfunction</span>
+ 
+<span class="n">let</span> <span class="n">g</span><span class="ss">:unite_force_overwrite_statusline</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:vimfiler_force_overwrite_statusline</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:vimshell_force_overwrite_statusline</span> <span class="o">=</span> <span class="mi">0</span>
+ 
+<span class="s2">"NEOVIM Syntax allowed
+syntax on
+ 
+"</span><span class="no">NEOVIM</span> <span class="no">Theme</span>
+<span class="n">colorscheme</span> <span class="n">onedark</span>
+ 
+<span class="n">set</span> <span class="n">bs</span><span class="o">=</span><span class="mi">2</span>  <span class="s2">"allow backspacing over everything in insert mode
+set ruler
+set number
+set noshowmode
+set autoindent
+set smartindent
+set noswapfile
+set clipboard+=unnamedplus
+autocmd FileType python setlocal tabstop=4
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+let python_version_3=1
+let python_highlight_all=1
+
+let mapleader = "</span><span class="p">,</span><span class="s2">"
+nnoremap &lt;leader&gt;1 :bp&lt;CR&gt;
+nnoremap &lt;leader&gt;2 :bn&lt;CR&gt;
+"</span><span class="n">nnoremap</span> <span class="o">&lt;</span><span class="n">leader</span><span class="o">&gt;</span><span class="n">q</span> <span class="ss">:bp</span><span class="o">&lt;</span><span class="no">CR</span><span class="o">&gt;</span> <span class="o">|</span> <span class="ss">:bd!</span><span class="o">&lt;</span><span class="no">CR</span><span class="o">&gt;</span>
+
+<span class="s2">"delimitMate
+let delimitMate_expand_cr=1
+
+"</span><span class="no">Nerd</span> <span class="no">Tree</span>
+<span class="n">autocmd</span> <span class="no">VimEnter</span> <span class="o">*</span> <span class="no">NERDTree</span>
+<span class="n">let</span> <span class="no">NERDTreeShowLineNumbers</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">let</span> <span class="no">NERDTreeWinSize</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">autocmd</span> <span class="no">VimEnter</span> <span class="o">*</span> <span class="n">wincmd</span> <span class="nb">p</span>
+<span class="n">autocmd</span> <span class="n">bufenter</span> <span class="o">*</span> <span class="k">if</span> <span class="p">(</span><span class="n">winnr</span><span class="p">(</span><span class="s2">"$"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">exists</span><span class="p">(</span><span class="s2">"b:NERDTree"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="ss">:NERDTree</span><span class="p">.</span><span class="nf">isTabTree</span><span class="p">())</span> <span class="o">|</span> <span class="n">q</span> <span class="o">|</span> <span class="n">endif</span>
+
+<span class="s2">"Neomake
+"</span><span class="n">call</span> <span class="n">neomake</span><span class="c1">#configure#automake('nrwi')</span>
+<span class="s2">"let neomake_list_height = 8
+"</span><span class="n">let</span> <span class="n">neomake_open_list</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="s2">"Vim-qf
+augroup my_neomake_qf
+    autocmd!
+    autocmd QuitPre * if &amp;filetype !=# 'qf' | lclose | endif
+augroup END
+
+"</span><span class="no">Vim</span><span class="o">-</span><span class="n">airline</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:airline</span><span class="c1">#extensions#tabline#enabled = 1 " turn on buffer list</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:airline_theme</span><span class="o">=</span><span class="s1">'onedark'</span>
+<span class="n">set</span> <span class="n">laststatus</span><span class="o">=</span><span class="mi">2</span> <span class="s2">" turn on bottom bar
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+"</span><span class="n">indentLine</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:indentLine_enabled</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:indentLine_showFirstIndentLevel</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:indentLine_char</span> <span class="o">=</span> <span class="s1">'│'</span>
+<span class="n">let</span> <span class="n">g</span><span class="ss">:indentLine_first_char</span> <span class="o">=</span> <span class="s1">'│'</span>
+
+<span class="s2">"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 3
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 8
+
+"</span><span class="n">vim</span><span class="o">-</span><span class="n">instant</span><span class="o">-</span><span class="n">markdown</span>
+<span class="n">filetype</span> <span class="n">plugin</span> <span class="n">on</span>
+</code></pre></div></div>
+<h3 id="1-4-vim-plug">1-4. Vim-plug</h3>
+<p>You can install by commiting this commend.</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">curl</span> <span class="o">-</span><span class="n">fLo</span> <span class="o">~</span><span class="sr">/.local/s</span><span class="n">hare</span><span class="o">/</span><span class="n">nvim</span><span class="o">/</span><span class="n">site</span><span class="o">/</span><span class="nb">autoload</span><span class="o">/</span><span class="n">plug</span><span class="p">.</span><span class="nf">vim</span> <span class="o">--</span><span class="n">create</span><span class="o">-</span><span class="n">dirs</span> <span class="p">\</span>
+    <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">raw</span><span class="p">.</span><span class="nf">githubusercontent</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">junegunn</span><span class="o">/</span><span class="n">vim</span><span class="o">-</span><span class="n">plug</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">plug</span><span class="p">.</span><span class="nf">vim</span>
+</code></pre></div></div>
+<p>You can check more about this manager at <a href="https://github.com/junegunn/vim-plug">here</a>.</p>
+
+
+    
+    
+
+    
+  </div>
+
+</article>
+
+</main><!-- Back to top button-->
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 42,
+  backgroundColor: 'rgb(0, 0, 0)',
+  textColor: '#fff'
+})</script>
+<!--향후 추가해야할 점들
+	하단 우측에 링크 아이콘 추가하기
+	Capitalizing 할 수 있는 방법 찾아보기-->
+
+<div align="center" id="footer" class="footer">
+  <ul class="footer-icons">
+	<li class="footer-icons">
+	  <a class="footer-icons" href="https://github.com/blankymunn">
+		<!--<span class="sr-only">github</span>-->
+		<img align="center" src="/assets/img/github.png">
+	  </a>
+	</li>
+	<li class="footer-icons">
+	  <a class="footer-icons"href="">
+		<!--<span class="sr-only">github</span>-->
+		<img align="center" src="/assets/img/facebook.png">
+	  </a>
+	</li>
+	<li class="footer-icons">
+	  <a class="footer-icons" href="">
+		<!--<span class="sr-only">github</span>-->
+		<img align="center" src="/assets/img/instagram.png">
+	  </a>
+	</li>
+	<li class="footer-icons">
+	  <a class="footer-icons" href="">
+		<!--<span class="sr-only">github</span>-->
+		<img align="center" src="/assets/img/rss.png">
+	  </a>
+	</li>
+  </ul>
+	<!--<ul id="footer-menu">
+    	<li>
+		    <a href="/">Blankymunn</a>
+		</li>
+		<li>
+			<a href="https://github.com/blankymunn">Github</a>
+		</li>
+	</ul> -->
+	<ul>
+	<p id="copyright">
+		Copyright &copy; <strong>Blankymunn</strong>. All right reserved.<br>
+		Icon made by <a href="https://www.flaticon.com/authors/freepik"><strong>Freepik</strong></a><br>
+		Powered by <a href="https://sparanoid.com/lab/amsf/"><strong>AMSF</strong></a>
+	</p>
+	</ul>
+</div>
+
+
+<!-- Theme scripts -->
+<script src="/assets/themes/curtana/js/app.js?assets-inline"></script>
+
+<!-- User scripts -->
+<script src="/assets/js/user.js?assets-inline"></script>
+
+<!-- Lightense Images -->
+
+
+<!-- Service Worker  -->
+
+
+<!-- Google Analytics -->
+
+
+<!-- Foot hooks -->
+
+
+<!-- Finale -->
+</html>

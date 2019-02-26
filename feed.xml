@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blankymunn</title>
+  <subtitle>An archive for my dev-log</subtitle>
+  <updated>2019-02-26T11:15:36+00:00</updated>
+  <id>http://0.0.0.0:4321/</id>
+  <generator uri="https://sparanoid.com/lab/amsf/" version="2.0.12">Almace Scaffolding</generator>
+
+  <link rel="alternate" type="text/html" hreflang="en" href="http://0.0.0.0:4321/" />
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4321/feed.xml" />
+
+  <author>
+    <name>Blankymunn</name>
+    <uri>http://0.0.0.0:4321/</uri>
+    <email>trestucky@gmail.com</email>
+  </author>
+
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Customizing github blog</title>
+        <id>http://0.0.0.0:4321/blog-customizing/</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/blog-customizing/" />
+        <published>2019-02-25T00:00:00+00:00</published>
+
+        
+          <updated>2019-02-26T08:15:52+00:00</updated>
+        
+
+        <author>
+          <name>Blankymunn</name>
+          <uri></uri>
+          <email>trestucky@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;This post is for explanation about customizing my blog.&lt;/p&gt;
+
+&lt;p&gt;After you cloned this blog, you can encounter tons of folders and files and probably get lost among them. So, I’m gonna explain what folder or file under ‘_app’ is for.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-assets&quot;&gt;1. Assets&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── assets/
+|   └── _scss/
+|   |   └── _user.scss
+|   |   └── _variable.scss
+|   └── themes/curnata/
+|   |   └── _common.scss
+|	|	└── _variables.scss
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The folder ‘Assets’ is consists of .scss files which contains classes and basic configs for the blog(e.g Blog’s color schemes, font-size, …).&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;_scss_userscss&quot;&gt;_scss/_user.scss&lt;/h2&gt;
+
+&lt;p&gt;This file contains user-make classes.&lt;br /&gt;
+If you wanna use your own classes, you can add yours to this file.&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This post is for explanation about customizing my blog.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Personal dev-settings for Linux</title>
+        <id>http://0.0.0.0:4321/linux-dev-config/</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/linux-dev-config/" />
+        <published>2019-02-23T00:00:00+00:00</published>
+
+        
+          <updated>2019-02-26T08:15:52+00:00</updated>
+        
+
+        <author>
+          <name>Blankymunn</name>
+          <uri></uri>
+          <email>trestucky@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;What I’m going to explain is my own dev-settings for Linux, especially for Ubuntu.
+Over several times to re-install Ubuntu, I realized the need to write down all the things that I’d done.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-things-about-terminal&quot;&gt;1. Things about terminal&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-terminator&quot;&gt;1-1. Terminator&lt;/h3&gt;
+&lt;p&gt;You can install terminator at the terminal. Type the command below.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terminator&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;After installing the app, you have to install &lt;a href=&quot;https://github.com/EliverLara/terminator-themes&quot;&gt;terminator themes&lt;/a&gt;.&lt;br /&gt;
+We’ll use &lt;code class=&quot;highlighter-rouge&quot;&gt;onedark&lt;/code&gt; theme. If you installed the themes, Let’s move on.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+The next step is for configuration of the app. Make or edit the file: &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.config/terminator/config&lt;/code&gt; and then paste the commands to it.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;enabled_plugins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TerminatorThemes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LaunchpadCodeURLHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;APTURLHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LaunchpadBugURLHandler&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;handle_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;window_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maximise&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keybindings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;close_term&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Shift&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;new_tab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Shift&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_6&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;switch_to_tab_9&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Primary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layouts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;child1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;window0&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;profile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Terminal&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Window&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;background_color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#282c34&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;background_darkness&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cursor_color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#676c76&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;font&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Ubuntu&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Mono&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;foreground_color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#abb2bf&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;scrollbar_position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hidden&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;show_titlebar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The next step is to eliminate border of the app. Make a file:&lt;code class=&quot;highlighter-rouge&quot;&gt; ~/.config/gtk-3.0/gtk.css&lt;/code&gt; to contain the commands below.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;vi&quot;&gt;@deifine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;border&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#282c34;&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;terminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;terminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;border: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;terminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;border: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;ss&quot;&gt;padding: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;terminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;terminal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decoration&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;ss&quot;&gt;border: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;ss&quot;&gt;background: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Finally, open the app &lt;em&gt;settings&lt;/em&gt; and go to the keyboard menu. &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Alt+T&lt;/code&gt; launches terminal as default. Disable it, and make a new shortcut as same as the key combination before. The command should be &lt;code class=&quot;highlighter-rouge&quot;&gt;terminator&lt;/code&gt;. Then the shortcut will launch the app.
+&amp;lt;/details&amp;gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-2-zsh--oh-my-zsh&quot;&gt;1-2. Zsh &amp;amp; Oh-my-zsh&lt;/h3&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;completions&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# via curl&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# via wget&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;After the installation, commit&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;chsh&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to set zsh as the default shell. Then, you can set the zsh configuration via &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt; file. The code below is an example.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$PATH&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ZSH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/home/blankymunn/.oh-my-zsh&quot;&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;ZSH_THEME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;robbyrussell&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;git&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;syntax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highlighting&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;autosuggestions&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$ZSH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sh&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/home/blankymunn/anaconda3/bin:$PATH&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;EDITOR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nvim&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'nvim'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'nvim'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vimdiff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;nvim -d&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PWS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/home/blankymunn/Desktop/computer-vision/python'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CV&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/home/blankymunn/Desktop/computer-vision'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GIT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/home/blankymunn/Desktop/computer-vision/git'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blankymunn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;syntax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highlighting&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zsh&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;syntax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highlighting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;zsh&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.fzf.zsh ] &amp;amp;&amp;amp; source ~/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fzf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;zsh&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Install Ruby Gems to ~/gems&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GEM_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$HOME/gems&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$HOME/gems/bin:$PATH&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you’ve been using bash shell, you can synchronize your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$SOURCE&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$TARGET&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The file at &lt;code class=&quot;highlighter-rouge&quot;&gt;$TARGET&lt;/code&gt; references the source file at &lt;code class=&quot;highlighter-rouge&quot;&gt;$SOURCE&lt;/code&gt;. This means all the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;$TARGET&lt;/code&gt; file is replaced with the contents of the file at &lt;code class=&quot;highlighter-rouge&quot;&gt;$SOURCE&lt;/code&gt;. You can check this out &lt;a href=&quot;https://askubuntu.com/questions/56339/how-to-create-a-soft-or-symbolic-link&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-3-neovim&quot;&gt;1-3. Neovim&lt;/h3&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neovim&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can set the configuration of neovim at &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.config/nvim/init.vim&lt;/code&gt;. If the file doesn’t exist, just make one.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;installing Vim Plug-in Using Vim-Plug
+call plug#begin('~/.config/nvim/plugged')
+Plug 'sheerun/vim-polyglot'
+Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Plug&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'neomake/neomake'&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;Plug 'dojoteef/neomake-autolint'
+Plug 'vim-syntastic/syntastic'
+Plug 'romainl/vim-qf'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Yggdroot/indentLine'
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Plug&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'suan/vim-instant-markdown'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plug&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#end()&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot;Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'re using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;support&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;(see &amp;lt; http://sunaku.github.io/tmux-24bit-color.html#usage &amp;gt; for more information.)
+if (empty($TMUX))
+  if (has(&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nvim&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;))
+    &quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;For&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Neovim&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neovim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neovim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2198&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  &quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;For&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Neovim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Vim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;patch&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;7.4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1799&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;commit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;61&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;be73bb0f965a895bfb064ea3e55476ac175162&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;Based on Vim patch 7.4.1770 (`guicolors` option) &amp;lt; https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd &amp;gt;
+  &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neovim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neovim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wiki&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Following&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;HEAD&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#20160511 &amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;has&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;termguicolors&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;termguicolors&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;endif&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;endif&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base16colorspace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;
+ 
+&lt;span class=&quot;s2&quot;&gt;&quot;Configuration for lightline
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:lightline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;  &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'colorscheme': 'onedark',
+&quot;&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:lightline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'colorscheme'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'onedark'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'component_function'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;   &lt;span class=&quot;s1&quot;&gt;'filename'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'LightlineFilename'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;function!&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LightlineFilename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 'vimfiler' ? vimfiler#get_status_string() :&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 'unite' ? unite#get_status_string() :&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# 'vimshell' ? vimshell#get_status_string() :&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'%:t'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# '' ? expand('%:t') : '[No Name]'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;endfunction&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:unite_force_overwrite_statusline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:vimfiler_force_overwrite_statusline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:vimshell_force_overwrite_statusline&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+ 
+&lt;span class=&quot;s2&quot;&gt;&quot;NEOVIM Syntax allowed
+syntax on
+ 
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;NEOVIM&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Theme&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;colorscheme&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onedark&lt;/span&gt;
+ 
+&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;allow backspacing over everything in insert mode
+set ruler
+set number
+set noshowmode
+set autoindent
+set smartindent
+set noswapfile
+set clipboard+=unnamedplus
+autocmd FileType python setlocal tabstop=4
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+let python_version_3=1
+let python_highlight_all=1
+
+let mapleader = &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;
+nnoremap &amp;lt;leader&amp;gt;1 :bp&amp;lt;CR&amp;gt;
+nnoremap &amp;lt;leader&amp;gt;2 :bn&amp;lt;CR&amp;gt;
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nnoremap&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;leader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;CR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bd!&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;CR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot;delimitMate
+let delimitMate_expand_cr=1
+
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Nerd&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Tree&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autocmd&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VimEnter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NERDTree&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NERDTreeShowLineNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NERDTreeWinSize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autocmd&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VimEnter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wincmd&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autocmd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bufenter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;winnr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;$&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;b:NERDTree&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:NERDTree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;isTabTree&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endif&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot;Neomake
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neomake&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#configure#automake('nrwi')&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;let neomake_list_height = 8
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neomake_open_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot;Vim-qf
+augroup my_neomake_qf
+    autocmd!
+    autocmd QuitPre * if &amp;amp;filetype !=# 'qf' | lclose | endif
+augroup END
+
+&quot;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;airline&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:airline&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#extensions#tabline#enabled = 1 &quot; turn on buffer list&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:airline_theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'onedark'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;laststatus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; turn on bottom bar
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;indentLine&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:indentLine_enabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:indentLine_showFirstIndentLevel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:indentLine_char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'│'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:indentLine_first_char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'│'&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot;Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 3
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 8
+
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;markdown&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;filetype&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plugin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;1-4-vim-plug&quot;&gt;1-4. Vim-plug&lt;/h3&gt;
+&lt;p&gt;You can install by commiting this commend.&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;curl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fLo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.local/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nvim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;autoload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dirs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;githubusercontent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;junegunn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;master&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;vim&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can check more about this manager at &lt;a href=&quot;https://github.com/junegunn/vim-plug&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>What I’m going to explain is my own dev-settings for Linux, especially for Ubuntu.Over several times to re-install Ubuntu, I realized the need to write down all the things that I’d done.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>for example</title>
+        <id>http://0.0.0.0:4321/ex/</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/ex/" />
+        <published>2019-02-19T00:00:00+00:00</published>
+
+        
+          <updated>2019-02-20T02:21:15+00:00</updated>
+        
+
+        <author>
+          <name>Blankymunn</name>
+          <uri></uri>
+          <email>trestucky@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;this is example&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>this is example</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>My dev-env tutorial</title>
+        <id>http://0.0.0.0:4321/os-x-dev-config/</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/os-x-dev-config/" />
+        <published>2019-02-19T00:00:00+00:00</published>
+
+        
+          <updated>2019-02-20T02:21:15+00:00</updated>
+        
+
+        <author>
+          <name>Blankymunn</name>
+          <uri></uri>
+          <email>trestucky@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary></summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>The Beginning.</title>
+        <id>http://0.0.0.0:4321/anecdote/</id>
+        <link rel="alternate" type="text/html" href="http://0.0.0.0:4321/anecdote/" />
+        <published>2019-02-18T00:00:00+00:00</published>
+
+        
+          <updated>2019-02-20T02:21:15+00:00</updated>
+        
+
+        <author>
+          <name>Blankymunn</name>
+          <uri></uri>
+          <email>trestucky@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://0.0.0.0:4321/">
+          
+            &lt;p&gt;This is the very first anecdote that I wrote.&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This is the very first anecdote that I wrote.</summary>
+        
+      </entry>
+    
+  
+</feed>

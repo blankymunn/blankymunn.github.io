@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://0.0.0.0:4321/</loc>
+    <lastmod>2019-02-26</lastmod>
+  </url>
+
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/about/</loc>
+        
+          <lastmod>2019-02-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/anecdotes/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/dev/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/</loc>
+        
+          <lastmod>2019-02-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/photologue/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/projects/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/blog-customizing/</loc>
+        
+          <lastmod>2019-02-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/linux-dev-config/</loc>
+        
+          <lastmod>2019-02-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/ex/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/os-x-dev-config/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/anecdote/</loc>
+        
+          <lastmod>2019-02-20</lastmod>
+        
+      </url>
+    
+  
+
+</urlset>

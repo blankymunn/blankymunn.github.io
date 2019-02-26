@@ -1,0 +1,15 @@
+{
+  "name": "Blankymunn",
+  "short_name": "dev.B",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#808080",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
