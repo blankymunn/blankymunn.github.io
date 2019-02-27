@@ -33,15 +33,6 @@
 }
 
 // Footer icon
-#links > li > a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-}
-
 .footer-icons {
 	ul {
 		align: center;
@@ -57,27 +48,27 @@
 	}
 }
 
-#link-github {
-    background-image: url(../img/github24.png);
-}
-
-#link-facebook {
-    background-image: url(../images/pc/icon_face.png);
-}
-
-#link-instagram {
-    background-image: url(../images/pc/icon_twit.png);
-}
-
-#link-rss {
-    background-image: url(../images/pc/icon_rss.png);
-}
-
+// Inspired by tech.kakao.com
 .sr-only {
     position: absolute;
     top: -9999px;
     left: -9999px
 }
+
+//navigation
+#logo {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 123px;
+    height: 54.266px;
+    //margin: 0 0;
+    //padding: 0;
+    background: url(../home_cover.jpg) no-repeat center;
+    //background-size: 123px 21px;
+	background-size: 42px 42px;
+}
+
 
 // Search bar from tech.kakao.com
 #search {
@@ -139,5 +130,3 @@
 .search__results > li > a {
     padding: 10px;
 }
-
-
